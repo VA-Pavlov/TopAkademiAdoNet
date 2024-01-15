@@ -30,8 +30,11 @@
             </StackPanel>
             <StackPanel Grid.Column="1" Margin="10">
                 <ComboBox>
-                    <ComboBoxItem Content="1"/>
-                    <ComboBoxItem Content="2"/>
+                    <ComboBoxItem Content="Вся таблица"/>
+                    <ComboBoxItem Content="ФИО сех студентов"/>
+                    <ComboBoxItem Content="Все средние оценки"/>
+                    <ComboBoxItem Content="ФИО сех студентов с мин > указанной"/>
+                    <ComboBoxItem Content="ФИО сех предметов с мин ср. оц"/>
                 </ComboBox>
                 <TextBlock TextWrapping="Wrap"/>
             </StackPanel>
