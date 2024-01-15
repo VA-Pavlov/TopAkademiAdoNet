@@ -7,6 +7,35 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto" />
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <StackPanel Orientation="Horizontal" Background="LightPink">
+            <Button Content="Подключиться" FontSize="20" Padding="5" Margin="5" Background="LightGoldenrodYellow"/>
+            <Button Content="Отключиться" FontSize="20" Padding="5"  Margin="10,5" Background="LightBlue"/>
+            <TextBlock Text="Нет соединения" FontSize="30" Margin="0,5"/>
+        </StackPanel>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <StackPanel Margin="10">
+                <ComboBox>
+                    <ComboBoxItem Content="1"/>
+                    <ComboBoxItem Content="2"/>
+                </ComboBox>
+                <TextBlock TextWrapping="Wrap"/>
+            </StackPanel>
+            <StackPanel Grid.Column="1" Margin="10">
+                <ComboBox>
+                    <ComboBoxItem Content="1"/>
+                    <ComboBoxItem Content="2"/>
+                </ComboBox>
+                <TextBlock TextWrapping="Wrap"/>
+            </StackPanel>
+        </Grid>
         
     </Grid>
 </Window>
