@@ -37,14 +37,12 @@
                 <TextBlock TextWrapping="Wrap" Name="TextBloxkOne"/>
             </StackPanel>
             <StackPanel Grid.Column="1" Margin="10">
-                <ComboBox>
-                    <ComboBoxItem Content="Вся таблица"/>
-                    <ComboBoxItem Content="ФИО сех студентов"/>
-                    <ComboBoxItem Content="Все средние оценки"/>
-                    <ComboBoxItem Content="ФИО сех студентов с мин > указанной"/>
-                    <ComboBoxItem Content="ФИО сех предметов с мин ср. оц"/>
-                </ComboBox>
-                <TextBlock TextWrapping="Wrap"/>
+                <RadioButton Content="Минимальная средняя оценка" Checked="RadioButton_Checked_4"/>
+                <RadioButton Content="Максимальная Средняя о" Checked="RadioButton_Checked_5"/>
+                <RadioButton Content="Кол-во с минимальной ср.оц. по математике" Checked="RadioButton_Checked_6"/>
+                <RadioButton Content="Кол-во студентов в каждой группе" Checked="RadioButton_Checked_7"/>
+                <RadioButton Content="Средняя оценка по группе" Checked="RadioButton_Checked_8"/>
+                <TextBlock TextWrapping="Wrap" FontSize="15" Name="TextBlock2"/>
             </StackPanel>
         </Grid>
         
