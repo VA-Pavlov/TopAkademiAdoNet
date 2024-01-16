@@ -98,6 +98,7 @@ namespace TopAkademiAdoNet
             TextBloxkOne.Text = "";
             SqlCommand select = new SqlCommand(@"select SROC from Ocenki", connect);
             SqlDataReader selectReader = select.ExecuteReader();
+
             while (selectReader.Read())
             {
                 TextBloxkOne.Text += selectReader[0] + "\n";
@@ -108,7 +109,14 @@ namespace TopAkademiAdoNet
         private void RadioButton_Checked_2(object sender, RoutedEventArgs e)
         {
             TextBloxkOne.Text = "";
-            SqlCommand select = new SqlCommand(@"select FIO from Ocenki where SROC>"+ValueBox.Text, connect);
+
+            SqlParameter param1 = new SqlParameter();
+            param1.ParameterName = "@p1";
+            param1.SqlDbType = System.Data.SqlDbType.Float;
+            param1.Value = ValueBox.Text;
+
+            SqlCommand select = new SqlCommand(@"select FIO from Ocenki where SROC>@p1", connect);
+            select.Parameters.Add(param1);
             SqlDataReader selectReader = select.ExecuteReader();
             while (selectReader.Read())
             {
