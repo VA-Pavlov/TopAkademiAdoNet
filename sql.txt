@@ -1,0 +1,9 @@
+﻿CREATE TABLE [dbo].[Table1] (
+    [Id]              INT          NOT NULL,
+    [FIO]             VARCHAR (40) NOT NULL,
+    [NameGroup]       VARCHAR (5)  DEFAULT ('DB-15') NOT NULL,
+    [SROC]            FLOAT (53)   NOT NULL,
+    [LISTENWITHMINOC] VARCHAR (15) NOT NULL,
+    [LISTENWITHMAXOC] VARCHAR (15) NOT NULL,
+    PRIMARY KEY CLUSTERED ([Id] ASC)
+);
